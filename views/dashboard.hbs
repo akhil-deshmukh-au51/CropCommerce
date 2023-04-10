@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyApp</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    {{>navbar}}
+    <div class="background-block">
+        <h1>Products</h1>
+        <ul>
+            {{#each products}}
+            <li>{{name}} - {{price}} Rs</li>
+            {{/each}}
+        </ul>
+        <a href="/add">Add Product</a>
+    </div>
+    {{>footer}}
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My App - Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <button onclick="location.href='/products'">Back to Products</button>
+   <h1>Cart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each cart.items}}
+            <tr>
+                <td>
+                    
+                    <h3>{{this.product.name}}</h3>
+                </td>
+                <td>{{this.quantity}}</td>
+                <td>{{this.product.price}} Rs/Kg</td>
+                <td>{{this.product.price}} * {{this.quantity}} Rs</td>
+            </tr>
+            {{/each}}
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total:</td>
+                <td>{{cart.totalPrice}} Rs</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form action="/checkout" method="get">
+        <button type="submit">Checkout</button>
+    </form></body>
+</html>
+

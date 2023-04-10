@@ -1,0 +1,43 @@
+/* Apply styles to the body element */
+body {
+    background-image: url('https://wallpapercave.com/wp/wp1987046.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }  
+  
+  h1 {
+    color: #d71f1f;
+    font-size: 36px; /* Increase font size to 36 pixels */
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  /* Apply styles to the unordered list element */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply styles to the list item element */
+  li {
+    color: #ffffff;
+    font-size: 24px; /* Increase font size to 24 pixels */
+    margin: 10px 0;
+  }
+  
+  /* Apply styles to the link element */
+  a {
+    color: #11ec15;
+    font-size: 18px; /* Increase font size to 18 pixels */
+    text-decoration: none;
+  }
+  
+  /* Apply styles to the background block */
+  .background-block {
+    background: linear-gradient(to right, #00c8ff75, #92fe9d72);
+    padding: 20px;
+    text-align: center;
+   ;
+  }
+  
